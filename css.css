@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   background-image: url(images/istockphoto-613105360-1024x1024.jpg);
+   background-image: url(images/depositphotos_161865730-stock-photo-modern-white-office-desk-top.jpg);
  
     background-size:cover ;
 }
@@ -16,9 +16,13 @@
     
 }
 
-.banner .container-fluid p{
+.banner .container-fluid h1{
     font-size: 20px;
     margin: 20px;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
 }
 
 .banner .container-fluid .btn1{
@@ -33,7 +37,7 @@
 .banner .container-fluid .btn2{
     
     padding: 10px 20px;
-    background: #;
+    background: #866643;
     display: inline-block;
     letter-spacing: 2px;
     margin-right: 20px;

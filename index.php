@@ -20,8 +20,8 @@
     <section class="banner" >
 
         <div class="container-fluid">
-            <h1>BIENVENUE DANS NOTRE SITE </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum dolorum molestiae similique officia asperiores, repellat, veniam dignissimos deserunt tempora delectus odio magni voluptatem eum beatae error sapiente reiciendis nulla.</p>
+            <h1 >WELCOME TO OUR PLATFORM </h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum dolorum molestiae similique officia asperiores, repellat, veniam dignissimos deserunt tempora delectus odio magni voluptatem eum beatae error sapiente reiciendis nulla.</p> -->
             <a href="Routing.php?action=display" class="btn1 text-light">Liste Des Etudiants</a>
             <a href="Routing.php?action=adduser" class="btn2 text-light">Notre Formulaire</a>
         </div>

@@ -31,12 +31,12 @@
     <input type="number" class="form-control" name="age" placeholder="age">
 
     <label class="form-label">cne</label>
-    <input type="text" class="form-control" name="cne">
+    <input type="text" class="form-control" name="cne"placeholder="cne">
 
    
     <br>
 
-    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+    <button type="submit" class="btn btn-dark my-5" name="submit">Submit</button>
 </form>
 </div>
 </body>

@@ -16,7 +16,7 @@ try {
         if (isset($_GET['action'])) {
 
                 if ($_GET['action'] == 'display') {
-                            $this->ctrlEtudiant->welcome(); 
+                            $this->ctrlEtudiant->list(); 
                 }
 
                 else if ($_GET['action'] == 'adduser') {

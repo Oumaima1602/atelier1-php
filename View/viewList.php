@@ -12,9 +12,9 @@
 </head>
 <body>
 
-<h2 class="p-3 mb-2 bg-dark text-white"> data  base </h1>
+<h2 class="p-3 mb-2 bg-dark text-white " style = "text-transform : uppercase; text-align : center;  font-family: 'Times New Roman', Times, serif; color: black;"> our data  base </h1>
 
-<button class="btn btn-dark my-5" ><a href="Routing.php?action=adduser" class="text-light">Add User</a></button>
+<button class="btn btn-dark my-5" ><a href="Routing.php?action=adduser" class="text-light" style = "text-decoration : none;">Add User</a></button>
 
 
 

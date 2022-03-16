@@ -12,11 +12,11 @@ public function __construct() {
     $this->etudiant = new Etudiant();
     $this->etudiantTransaction = new EtudiantTransaction(); 
 }
-// Affiche la liste de tous les billets du blog 
+// Affiche la liste de tous les étudiants 
 
-public function welcome() {
+public function list() {
         $ets = $this->etudiantTransaction->getList(); 
-       $view = new View("Welcome"); 
+       $view = new View("List"); 
        $view->generate(array('ets' => $ets));
 } 
 
@@ -29,11 +29,14 @@ public function getOne($id) {
    $view = new View("Etudiant"); 
    $view->generate(array('etudiant' => $etudiant));
 } 
+
+// Ajouter un étudiant à la liste
+
 public function insertEt()
    
  {
     
-    $view =new View ("Liste");
+    $view =new View ("Form");
     $view->generate(array('etudiant'=>$this->etudiant));
         if(isset($_POST['submit'])){
     
@@ -51,6 +54,7 @@ public function insertEt()
            }
      }
 
+// Modifier les infos d'un étudiant
      
 
 public function mj($id)
@@ -63,7 +67,6 @@ public function mj($id)
     $view->generate(array('etudiant'=>$etudiant)); 
 
         
-//   //$id1=$_GET['updateid'];
 if(isset($_POST['update'])){
 
    
@@ -82,7 +85,6 @@ if(isset($_POST['update'])){
 
                         
           $this->etudiantTransaction->update($this->etudiant);   
-        //  echo "+++++".$this->etudiant->getId();
                   
 
   header("Location:http://localhost/etudiantvf/Routing.php?action=display");
@@ -90,7 +92,8 @@ if(isset($_POST['update'])){
 }
 }
 
-          
+ // supprimmer un étudiant de notre liste
+         
     
    public function supprimer($id){
     
@@ -103,17 +106,7 @@ if(isset($_POST['update'])){
     
     
 
-// public function edit($id)
-//      {
-//          if ($_POST) {
-//              $this->etudiantTransaction->update($id);
-//              header("Location: http://localhost/etudiantvf/index.php?action=etudiant");
-//          } else {
-//              $e = $this->etudiantTransaction->getOne($id);
-//              $view=new View ("ListeUp");
-//              $view->generate(array('etudiant'=>$this->etudiant)); 
-//          }
-//      }
+
     
     }   
 

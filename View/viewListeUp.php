@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" style = "margin : 40px;">
 
 
 
@@ -29,13 +29,13 @@
     <input type="number" class="form-control" name="age" placeholder="Your Age" value=<?= $etudiant->getAge()?>>
 
     <label class="form-label">CNE</label>
-    <input type="text" class="form-control" name="cne" value=<?= $etudiant->getCne()?>>
+    <input type="text" class="form-control" name="cne" placeholder="cne" value=<?= $etudiant->getCne()?>>
 
     <br>
 
    
 
-    <button type="submit" class="btn btn-primary" name="update">Update</button>
+    <button type="submit" class="btn btn-dark my-5" name="update">Update</button>
 </form>
  
 </div>
